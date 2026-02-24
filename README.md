@@ -12,40 +12,46 @@ This project builds a predictive model to estimate future GDP growth based on ma
 The app allows users to:
 
 -Select a country
+
 -Choose a historical or future year
+
 -View predicted GDP growth
+
 -Visualize historical trends
+
 -See model performance metrics
 
-🧠 Machine Learning Approach
-Feature Engineering
+-🧠 Machine Learning Approach
+-
+-Feature Engineering
 
-Computed GDP growth using percentage change
+-Computed GDP growth using percentage change
 
-Created lag feature (GDP_growth_lag1)
+-Created lag feature (GDP_growth_lag1)
 
-Removed infinite and missing values
+-Removed infinite and missing values
 
-Clipped extreme growth values to stabilize training
+-Clipped extreme growth values to stabilize training
 
-Model
+-Model
+-
 
-Ridge Regression
+-Ridge Regression
 
-Standardized inputs using StandardScaler
+-Standardized inputs using StandardScaler
 
-Recursive forecasting for multi-year future predictions
+-Recursive forecasting for multi-year future predictions
 
-Validation Strategy
+-Validation Strategy
 
-Time-Series Cross Validation (TimeSeriesSplit)
+-Time-Series Cross Validation (TimeSeriesSplit)
 
-Avoided data leakage
+-Avoided data leakage
 
-Evaluated using:
+-Evaluated using:
+-
+-R²
 
-R²
+-MAE
 
-MAE
-
-RMSE
+-RMSE
